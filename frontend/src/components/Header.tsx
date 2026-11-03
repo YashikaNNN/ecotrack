@@ -11,8 +11,6 @@ const LINKS = [
   { href: "/history", label: "History" },
   { href: "/dashboard", label: "Dashboard" },
   { href: "/points", label: "Points" },
-  { href: "/model", label: "Model" },
-  { href: "/about", label: "About" },
 ];
 
 export function Header() {

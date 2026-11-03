@@ -22,15 +22,12 @@ Each training image was labelled with one box covering about 95% of the frame (`
 
 Training augmentations stay in training. At prediction time Ultralytics resizes the photo to 640 pixels and normalises it. This app does not retrain the checkpoint.
 
-The Phase 2 report left measured scores pending. The Model page shows numbers only when `backend/data/test_metrics.csv` is present. It does not invent them.
-
 ## Features
 
 - Upload or camera capture of one JPEG, PNG, or WebP image (up to 8 MB)
 - Real YOLOv8n inference when `best.pt` is installed
 - Class, confidence, bin, and points, with a clear retry when confidence is low
 - History, category counts, simulated bins, and a name-based leaderboard stored in SQLite
-- Model page that explains the training plan and reads an evaluation CSV if you add one
 
 There is no password login. The name is kept in the browser and sent with each scan.
 
@@ -158,7 +155,7 @@ git add -f backend/weights/best.pt
 
 Use Git LFS only if a weight file approaches GitHub's 100 MB limit. Do not commit the image dataset, `node_modules`, `.venv`, or `.next`.
 
-This repository is created locally first. Creating the GitHub remote and pushing are separate steps and should be confirmed before they run.
+Repository: https://github.com/YashikaNNN/ecotrack
 
 ## Deployment
 
@@ -169,5 +166,3 @@ This repository is created locally first. Creating the GitHub remote and pushing
 ## Dataset and citation notes
 
 The proposal cites TrashNet (Yang and Thung, 2016) for plastic, paper, and metal, and names a Kaggle waste set for organic waste plus a Kaggle or Roboflow set for e-waste. Exact licences, image counts, and the e-waste source are still marked “to be confirmed” in the reports. TACO is cited as related work, not as the training set. COCO is the pretraining source for the starting weights.
-
-The proposal lists the second team member as Anubhi Sharma. The Phase 2 report lists Shreyansh Tiwari in that seat with the same student ID. The About page records both.

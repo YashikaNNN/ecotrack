@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { TextLink } from "@/components/ui";
 
 const MATERIALS = [
@@ -63,14 +62,8 @@ export default function HomePage() {
             which of five materials it shows, and turns that class into a bin
             and a stored record.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8">
             <TextLink href="/scan">Scan an item</TextLink>
-            <Link
-              href="/model"
-              className="inline-flex items-center justify-center border border-ink px-4 py-2.5 text-sm font-medium"
-            >
-              How the model was evaluated
-            </Link>
           </div>
         </div>
         <aside className="border border-line bg-card p-6">
@@ -115,7 +108,6 @@ export default function HomePage() {
             <li>Check one photo and read the class, confidence, and bin.</li>
             <li>Keep a history of attempts under your name.</li>
             <li>See category counts, simulated bin levels, and points from those scans.</li>
-            <li>Read the evaluation method, and the measured scores if the CSV is present.</li>
           </ul>
         </div>
         <div className="border border-line bg-card p-6">
