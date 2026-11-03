@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit), "Avenir Next", "Segoe UI", sans-serif;
+  --font-serif: var(--font-fraunces), "Iowan Old Style", Palatino, Georgia, serif;
+  --color-paper: #f3efe6;
+  --color-paper-2: #f7f4ee;
+  --color-ink: #1c2416;
+  --color-muted: #5c6556;
+  --color-line: #ddd4c4;
+  --color-accent: #245c40;
+  --color-accent-strong: #1b4631;
+  --color-accent-soft: #e4efe8;
+  --color-brass: #8a6230;
+  --color-brass-soft: #f3ead8;
+  --color-danger: #8d3b32;
+  --color-danger-soft: #f6e8e4;
+  --color-card: #fffcf7;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #d5e6db;
+}
